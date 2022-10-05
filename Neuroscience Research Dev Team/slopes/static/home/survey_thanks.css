@@ -1,0 +1,146 @@
+body{
+    position: relative;
+    padding: 2em 8em;
+    margin: 0;
+    background: rgba(130, 82, 199, 0.35);
+}
+
+.main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #F1F1DE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+.welc_head{
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1.2em 0 .2em 0;
+    background-color: #211551;
+    color: white;
+    padding: .2em .5em;
+}
+
+.rect{
+    font-family: Merriweather, serif;
+    padding: 0 5em;
+    font-size: .99rem;
+}
+
+h2{
+    font-weight: normal;
+    font-size: 2.1em;
+}
+
+h3{
+    font-size: 1.5em;
+    line-height: 30px;
+    text-align: left;
+}
+
+p{
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+a{
+    color: #BFABDC;
+}
+
+.results p{
+    font-size: 1.01rem;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.visitButton{
+    margin-bottom: 2.1em;
+    padding: .9em 1.1em;
+    display: flex;
+    border-radius: 15px;
+    background-color: #8252C7;
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.visit_rect{
+    display: flex;
+    flex-direction: column;
+    margin-top: .2em;
+    padding-top: .5em;
+    align-items: center;
+}
+
+input{
+    display: inline-block;
+    position: relative;
+    resize: vertical;
+}
+
+input[type=text]{
+    height: 1.5em;
+    margin: 0 10% 2em 0;
+    width: fit-content;
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: lighter;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15), 0px 2px 2px rgba(0, 0, 0, 0.15), 0px 2px 2px rgba(0, 0, 0, 0.15), 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+}
+
+@media (max-width: 940px) {
+    body{
+        padding: 1.2em;
+    }
+
+    .main {
+        justify-content: flex-start;
+        width: 100%;
+     }
+
+    .welc_head{
+        font-size: 2rem;
+        line-height: 1.2em;
+    }
+
+    rect{
+        padding: 0;
+    }
+
+    p{
+        padding: 1.1em 0 0;
+        margin-top: 0;
+    }
+
+    h2{
+        margin-bottom: 0;
+    }
+
+    .results p{
+    padding-top: 0;
+    }
+}
+
+@media (max-width: 545px) {
+     .rect{
+        padding: 0 2em;
+    }
+
+    h2{
+        margin-bottom: 0;
+    }
+
+    h3{
+        font-size: 1.2rem;
+    }
+}

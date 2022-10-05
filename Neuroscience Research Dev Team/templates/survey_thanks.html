@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thanks for taking the survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% load static %}
+    <link rel="stylesheet" href="{% static 'home/survey_thanks.css' %}" />
+</head>
+<body>
+
+    <div class = main>
+        <h1 class = welc_head>Thank you for your participation!</h1>
+        <div class = rect>
+                <p>We appreciate your participation. For more information about the study, the researchers, and backcountry travel safety information, please visit the study’s home page. <br></p>
+                <h3>Your average error was: {{ user_error }}</h3>
+                <h2>Interested in winning cool stuff?</h2>
+                <p>Submit your email below to enter a raffle, with prizes provided by our sponsors.</p>
+
+                <form action="" class="form1" method="POST">
+                    {% csrf_token %}
+                    <div>
+                        <input type="text" placeholder="Your email here..." name="email">
+                    </div>
+
+                    <div class="results">
+                        <p><a href="/csv_user_results" target="_blank ">Click here</a> to download your results.<br><br>Please send <a href="/survey_welcome">this survey link</a> to others to help get more participants!</p>
+                    </div>
+
+                    <div class = visit_rect>
+                    <input type="submit" class="visitButton" value="Visit Home Page">
+                    </div>
+                </form>
+        </div>
+    </div>
+</body>
+</html>

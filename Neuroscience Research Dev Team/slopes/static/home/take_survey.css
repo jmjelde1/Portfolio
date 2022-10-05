@@ -1,0 +1,172 @@
+html{
+    position: relative;
+    background-color: #E5E5E5;
+    height: auto;
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.bottom_frame{
+position: absolute;
+width: 100%;
+height: 40vw;
+
+/*top: 45vw;*/
+    bottom: -45vw;
+
+
+
+
+background: #211551;
+}
+
+.top_frame{
+
+    position: absolute;
+    width: 100%;
+    height: 35vw;
+
+    top: -7px;
+
+    background: #211551;
+}
+.frame{
+position: absolute;
+width: 96%;
+height:80vw;
+/*left: -23px;
+right: -23px;*/
+top: 22px;
+margin-left: 2%;
+margin-right: 2%;
+
+background: #211551;
+border: 4px solid #F1F1DE;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.inner_frame{
+position: absolute;
+width: 92%;
+margin-left: 4%;
+margin-right: 4%;
+height: 74vw;
+
+top: 42px;
+bottom: 42vw;
+
+background: #C4C4C4;
+
+}
+
+.inner_rectangle{
+    position: absolute;
+width: 56%;
+height: 65vw;
+margin-left: 22%;
+margin-right: 22%;
+top: 79px;
+
+background: #F1F1DE;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 25px;
+}
+
+.start_rectangle{
+    position: absolute;
+width: 40%;
+height: 10vw;
+margin-left: 30%;
+margin-right: 30%;
+top: 30vw;
+
+background: #8252C7;
+border: 1px solid #C4C4C4;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 25px;
+
+
+}
+
+.start_text{
+position: relative;
+text-align: center;
+margin-top: 3vw;
+
+font-family: sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 4vw;
+
+
+color: #F1F1DE;
+
+}
+
+.start_survey{
+    position: absolute;
+width: 60%;
+margin-left: 20%;
+margin-right: 20%;
+height: 72px;
+
+top: 10vw;
+text-align: center;
+
+font-family: sans-serif;
+font-style: normal;
+font-weight:normal;
+font-size: 4vw;
+line-height: 5vw;
+
+color: #211551;
+
+}
+
+.left_logo{
+    position: absolute;
+    width: 15%;
+    height: auto;
+    left: 10px;
+    bottom: 8px;
+}
+
+.copyright{
+    position: absolute;
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    bottom: 3vw ;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2vw;
+    line-height: 13px;
+    text-align: center;
+
+    color: #FFFFFF
+}
+.startButton{
+    display: block;
+}
+.startButton a{
+    font-size: 3.25vw;
+    border: none;
+    padding-top: 3.3vw;
+    padding-bottom: 3.3vw;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    text-decoration: none;
+    text-underline: none;
+    display: block;
+    ;
+}
+.start_rectangle:hover{
+    background-color: #111;
+}

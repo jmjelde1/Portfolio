@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exit Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home/exit_survey.css' %}" />
+</head>
+<body>
+    <div class="main">
+        <div class="rect">
+            <h1 class="exit_head" style="font-min-size: 20px">Demographic Survey</h1>
+
+            <form action="" class="form1" method="POST">
+                {% csrf_token %}
+
+                <label for="gender"> Gender </label>
+                <select name="gender" style="margin-bottom: 2em; width: fit-content; ">
+                    <option value="noselect">----</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="nonBinary">Non-Binary</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="age"> Age </label>
+                <input type="text" name="age" placeholder="Input age...">
+
+                <label for="zipcode"> Home zipcode? </label>
+                <input type="text" name="zipcode" placeholder="Input zipcode...">
+                <label for="years"> Years experience of winter backcountry travel </label>
+                <input type="text" name="years_experience" placeholder="Input years...">
+                <label for="days"> Average number of days per season over that span </label>
+                <input type="text" name="averagedays" placeholder="Input days...">
+                <label for="activities"> Preferred activities for winter backcountry travel </label>
+
+                <div class="activities">
+                    <div class="row">
+                        <input type="checkbox" name="activities" value="walking">
+                        <label for="activities" class="checkLabel">Walking/hiking on foot or snowshoes</label>
+                    </div>
+
+                    <div class="row">
+                        <input type="checkbox" name="activities" value="skiing">
+                        <label for="activities" class="checkLabel">Skiing</label>
+                    </div>
+
+                    <div class="row">
+                        <input type="checkbox" name="activities" value="snowboarding">
+                        <label for="activities" class="checkLabel">Snowboarding</label>
+                    </div>
+
+                    <div class="row">
+                        <input type="checkbox" name="activities" value="snowmobiling">
+                        <label for="activities" class="checkLabel">Snowmobiling or other motorized</label>
+                    </div>
+
+                    <div class="row">
+                        <input type="checkbox" name="activities" value="other">
+                        <label for="activities" class="checkLabel">Other</label>
+                    </div>
+                </div>
+
+                <div class="next_rect">
+                    <input type="submit" value="Next" class="nextButton">
+                </div>
+            </form>
+        </div>
+
+        <div class="copyright_rect">
+            <p>© Copyright 2021 Westminster College</p>
+        </div>
+    </div>
+</body>
+</html>

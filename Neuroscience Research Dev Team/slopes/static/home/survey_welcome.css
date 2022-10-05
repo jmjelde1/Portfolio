@@ -1,0 +1,157 @@
+body{
+    position: relative;
+    padding: 2em 8em;
+    margin: 0;
+    background: rgba(130, 82, 199, 0.35);
+}
+
+.main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #F1F1DE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+.rect{
+    padding: 0 1.5em;
+}
+
+.welc_head{
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1.2em 0 .9em 0;
+    background-color: #211551;
+    color: white;
+    padding: .2em .5em;
+}
+
+p{
+    text-align: center;
+    padding: 1.1em 2.5em 0;
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+#instruct{
+    text-align: left;
+    /*padding-left: 2em;*/
+    font-size: 1.2rem;
+    font-family: Merriweather, serif;
+    /*padding-bottom: .6em;*/
+    line-height: 1.5;
+    padding: 0 2em;
+    margin-bottom: 0;
+}
+
+h2{
+    font-size: 1.8rem;
+    line-height: 30px;
+    text-align: left;
+    font-weight: 50;
+    padding: 0 1.3em;
+}
+
+.startButton{
+    justify-content: center;
+    margin-bottom: .4em;
+    padding: .5em 3em;
+    display: flex;
+    border-radius: 15px;
+    background-color: #8252C7;
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.start_rect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: .2em;
+    padding-top: .5em;
+    align-items: center;
+}
+
+.admin_button{
+    font-family: Lato, sans-serif;
+    font-size: .9rem;
+    margin-top: .5em;
+}
+
+.copyright_rect{
+    display: flex;
+    font-family: Merriweather, serif;
+    justify-content: center;
+    margin-bottom: .2em;
+    padding-top: 1.5em;
+
+}
+
+
+.logo_container{
+    display: flex;
+    align-items: flex-start;
+    width: 10em;
+    margin-left: 4em;
+    margin-top: -.3em;
+    margin-bottom: -1.8em;
+}
+
+.logo{
+    width: 100%;
+}
+
+@media (max-width: 940px) {
+    body{
+        padding: 1.2em;
+    }
+
+    .main {
+        justify-content: flex-start;
+        width: 100%;
+     }
+
+    .welc_head{
+        font-size: 2rem;
+        line-height: 1em;
+        margin: 1.2em 0 .9em 0;
+    }
+
+    #instruct{
+        padding: 0 2em;
+}
+
+    p{
+        padding: 1.1em 0 0;
+        margin-top: 0;
+    }
+
+    h2{
+        margin: 0 1.2em .8em 0;
+        padding: 0 1.2em 0 0;
+    }
+
+    .startButton{
+        padding: .5em 2em;
+    }
+
+    .copyright_rect{
+        padding-top: 3em;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .logo_container{
+        display: none;
+    }
+     #instruct{
+        padding: 0;
+}
+}

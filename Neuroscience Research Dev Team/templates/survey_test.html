@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Test</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home/survey.css' %}">
+</head>
+<body>
+
+{#    <h1> {{ question.text }}</h1>#}
+{#    <h3> {{ question.question_text }}</h3>#}
+    <div class="container">
+        <img src = "{% static  question.image_url  %}" alt="My image" class="slopePic">
+
+
+    </div>
+
+     <div class="slideContainer">
+        <input type="range" min="0" max="90" value="45" class="slider" id="myRange">
+
+
+
+    <form action="" method="POST">
+            {% csrf_token %}
+                <h1 class = "valueBox"><span class="slopeAngle" id="value" name = "slopeValue"></span><span>&#176;</span></h1>
+                    <input type="hidden" value="" name="slopeHidden" id="value" />
+
+            </form>
+         </div>
+    <button class = nextButton id="next">Next</button>
+
+
+
+<script>
+
+    var url = window.location.href
+    currentID = url.slice(-3,-1)
+
+    console.log(url)
+    console.log(currentID)
+    var newID = +currentID + 1
+
+    document.getElementById('next').onclick = function (){
+        console.log(newID)
+        newURL = url.replace(currentID, newID)
+
+        console.log(newURL)
+        window.location.href = newURL;
+
+    }
+
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("value");
+    var outputVarNo = document.getElementById("outputVar");
+
+    let update = () => output.innerHTML = slider.value;
+
+    slider.addEventListener('input', update);
+    update();
+
+    document.getElementById("value").innerHTML = slopeValue;
+    document.getElementById("").value = slopeValue;
+
+
+
+</script>
+
+
+</body>
+</html>

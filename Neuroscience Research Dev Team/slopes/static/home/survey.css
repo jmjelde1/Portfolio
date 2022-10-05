@@ -1,0 +1,263 @@
+html{
+    height: auto;
+    width: auto;
+}
+
+body{
+    background-color: #F1F1DE;
+}
+
+.header {
+    background-color: #F1F1DE;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    background-color: #403472;
+    width: 60vw;
+    height: 32vw;
+    margin-left: 18.5vw;
+    border-radius: 25px;
+}
+
+.slopePic{
+    position: relative;
+    height: 30vw;
+    width: auto;
+    margin-top: .9vw;
+    background: #FFFFFF;
+}
+
+.footer{
+    background-color: #F1F1DE;
+    display: flex;
+    padding-bottom: 30px;
+    flex: 80%;
+}
+
+.slideContainer {
+  width: 100%; /* Width of the outside container */
+  padding-top: 2vw;
+  text-align: center;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 65%;
+  height: 15px;
+  border-radius: 5px;
+  background: #8252C7;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 4px solid rgba(130, 82, 199, 0.35);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+
+.surveyValue{
+    font-size: 30pt;
+    text-align: center;
+
+}
+
+.valueBox{
+    text-align: center;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 200;
+}
+
+.nextButton{
+    justify-content: center;
+    margin-bottom: .4em;
+    padding: .5em 2em;
+    display: flex;
+    background-color: #00B5E2;
+    border: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.nextDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: .2em;
+    padding-top: .5em;
+    margin-right: 5%;
+    align-items: flex-end;
+}
+
+.SelectValue{
+    width: 48px;
+    height: 40px;
+    position: absolute;
+    top:0;
+    background: #8252C7;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.SelectValue::after{
+    content: '';
+    border-top: 17px solid #8252C7;
+    border-left: 24px solid #F1F1DE;
+    border-right: 24px solid #F1F1DE;
+    position: absolute;
+    bottom: -14px;
+    left:0;
+}
+
+.questionPrompt{
+        text-align: center;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25pt;
+        line-height: 36px;
+        color: #211551;
+        margin: 10px;
+    }
+
+.copyright_rect{
+    display: flex;
+    justify-content: center;
+    margin-bottom: .2em;
+    padding-top: 1.5em;
+    font-size: .6rem;
+    }
+
+#Bar {
+    /*width: 50%;*/
+    height: 8px;
+    background-color: #00B5E2;
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 8px; /* To center it vertically */
+    }
+
+#Progress {
+    width: 100%;
+    background-color: #FFFFFF;
+    margin-top: 1em;
+    }
+
+
+@media (max-width: 750px) {
+    body{
+        overflow-x: hidden;
+        margin: initial;
+    }
+
+    .container {
+    text-align: center;
+    background-color: #211551;
+    width: 350px;
+    height: initial;
+    /*margin-right: initial;*/
+    /*margin-left: 0.8em;*/
+    margin: auto;
+    padding-bottom: 1.7em;
+    border-radius: 25px;
+    }
+
+    .slopePic{
+    /*height: 35em;*/
+        width: 87%; height: auto; margin-top: 1.7em;
+    }
+
+    .nextDiv{
+        align-items: center;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    .nextButton{
+        padding: .5em 2em;
+    }
+
+    .slider {
+    -webkit-appearance: none;
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    background: #8252C7;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    }
+    .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 4px solid rgba(130, 82, 199, 0.35);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+    .slider::-moz-range-thumb {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: white;
+      cursor: pointer;
+    }
+
+    .slideContainer{
+        padding-top: 2em;
+    }
+
+    .surveyValue{
+    font-size: 30pt;
+    text-align: center;
+    }
+
+    .questionPrompt{
+        /*margin-left: .5em;*/
+        /*width: max-content;*/
+        font-size: initial;
+    }
+
+    .valueBox{
+        text-align: center;
+        font-size: 30pt;
+        width: 375px;
+    }
+
+    h1{
+        margin: .4em 0;
+    }
+
+
+
+}

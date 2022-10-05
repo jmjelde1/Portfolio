@@ -1,0 +1,361 @@
+body {
+  display: inline;
+    background: #F1F1DE;
+        overflow-x: hidden;
+        margin: initial;
+}
+
+hr {
+    width: 80%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 50px;
+    padding-top: 3px;
+    border-width: 0;
+    background-color: #FFFFFF;
+}
+
+.header {
+      background-color: #211551;
+    position: relative;
+    width: 100%;
+    padding-bottom: 7em;
+    /*margin-top: 100px;*/
+}
+.headerText {
+    font-family: 'Lato',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 600px;
+    max-height: 30px;
+    color: #F1F1DE;
+    text-shadow: 0px 4px 4px rgb(0 0 0 25%);
+    margin-top: 0;
+    padding-top: 7px;
+    margin-left: 10em;
+}
+
+  .logo {
+    margin-top: 1em;
+    margin-left: 5.5em;
+    width: 116px;
+    height: 77px;
+    float: left;
+}
+
+  .admin_button{
+      position: absolute;
+      top:1em;
+      right: 0;
+      width: 86px;
+      height: 19px;
+      background: #9D581F;
+      font-size: 9pt;
+      color: white;
+      text-align: center;
+      line-height: 13pt;
+      text-decoration: none;
+  }
+
+  .admin_button:hover{
+      background: #9D480F;
+  }
+  .dropbtn{
+    background-color: #211551;
+    background-image: url(Frame.png);
+    border: none;
+    cursor: pointer;
+    height: 60px;
+    width: 65px;
+    background-size: 60px;
+    margin-left: 1em;
+    margin-top: 1em;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  .dropbtn:hover, .dropbtn:focus {
+  background-color: #403472;
+    }
+
+  .dropdown{
+      float:left;
+      position: relative;
+      display: inline-block;
+  }
+
+
+  /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 180px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+    background: #8252C7;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 15px 12px;
+    text-decoration: none;
+    display: block;
+    margin-top: 130px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #403472}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+.container {
+    width: 85.097vw;
+    height: auto;
+    left: 89px;
+    top: 224px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+    font-family: Lato,sans-serif;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+}
+
+img{
+    display: inline-block;
+    justify-content: center;
+}
+
+.containerPicSafe{
+    padding: 0 10% 3% 10%;
+    width: 80%;
+
+}
+.safeBlurb{
+        position: relative;
+        margin: 0 10% 3% 10%;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        font-family: Merriweather;
+    }
+.centered {
+    position: relative;
+    text-align: center;
+    top:10%;
+    line-height: 1.4;
+    font-family: Lato,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    color:#ffffff;
+    width: 85.097vw;
+    height: auto;
+    background: #BFABDC;
+}
+.infoBox{
+    width: 24.861vw;
+    /*width: fit-content;*/
+    /*height: 4.306vw;*/
+    background-color: #211551;
+    color:#FFFFFF;
+    font-family: Lato,sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    font-size: 20pt;
+    line-height: 25pt;
+    margin-left: 10%;
+    padding: .5em;
+    }
+
+    .welcome_body_text{
+        margin-left: 10%;
+        padding: 0 1em;
+        font-size: 18pt;
+    }
+
+.footerMain{
+    background-color: #211551;
+    display: inline-block;
+    width: 100%;
+}
+
+.footer{
+    background-color: #211551;
+    display: flex;
+    padding-bottom: 40px;
+    bottom: 0;
+    /*align-self: flex-end;*/
+    position: relative;
+}
+.footerSpacing{
+    margin:10px;
+}
+.copyright_rect{
+    display: flex;
+    font-family: Merriweather, serif;
+    justify-content: center;
+    font-size: .6rem;
+    /*bottom: 0;*/
+    /*align-items: flex-end;*/
+    color: white;
+    /*margin-left: 50%;*/
+    /*margin-bottom: 10px;*/
+    margin: .5em 0;
+    /*position: absolute;*/
+}
+.mountainColumn{
+    display: flex;
+    margin-left:4.5rem;
+    margin-top: 1rem;
+}
+.mountain {
+    display: block;
+    width: 66vw;
+    height: auto;
+    padding-left: 12vw;
+margin-top: 2%;
+}
+
+.footerText{
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 2%;
+}
+
+.column{
+    flex: 80%;
+    padding: 5px;
+
+}
+
+.imColumn.relative{
+    position: relative;
+    flex: 10%;
+    padding: 5px;
+    width: 2%;
+}
+.textColumn.relative{
+    position:relative;
+    text-align: left;
+    width:98%;
+}
+
+.footerButtons{
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+    .container{
+        bottom:0;
+        height: auto;
+    }
+    .mountain{
+        display: none;
+    }
+    .footer{
+        display: flex;
+        bottom:0;
+        align-self: flex-end;
+        padding-bottom: 15px;
+    }
+    .lefthr{
+        display: none;
+    }
+    .righthr{
+        display: none;
+    }
+    .header{
+        margin-top: initial;
+    }
+    .headerText{
+        font-size: 13pt;
+        line-height: initial;
+    }
+    .infoBox{
+        font-size: 15pt;
+        line-height: 15pt;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        width: 100%;
+        padding-left: initial;
+        padding-right: initial;
+        margin-left: initial;
+    }
+
+    .centered{
+        font-size: 25px;
+    }
+    .admin_button{
+        bottom: 0;
+        left: 0;
+        top:initial;
+    }
+
+}
+@media screen and (max-width: 700px) {
+    .mountain {
+        display: block;
+        width: 66vw;
+        height: auto;
+        padding-right: 2vw;
+        padding-left: 1vw;
+    }
+    .backgroundIm{
+        box-sizing: inherit;
+
+    }
+    .footer{
+    display: flex;
+    bottom: 0;
+    align-self: flex-end;
+}
+.footerText {
+    text-align: center;
+    /*font-size: .99rem;*/
+}
+.footer_logo{
+    height: initial;
+    width: initial;
+}
+
+.containerPicSafe{
+    padding: 0 0 3% 0;
+    width: 100%;
+
+}
+
+    .mountainColumn{
+        display: none;
+    }
+
+    .safeBlurb{
+        font-size: .99rem;
+    }
+
+    .welcome_body_text{
+        margin-left: 0;
+        padding-top: 0;
+        font-size: 1.1rem;
+        line-height: 30px;
+    }
+}

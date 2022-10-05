@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Survey Test</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home/survey.css' %}">
+</head>
+<body>
+
+{#    <h1> {{ question.text }}</h1>#}
+{#    <h3> {{ question.question_text }}</h3>#}
+    <div id="Progress" style="width: {{ barNumber }}%">
+        <div id="Bar"></div>
+    </div>
+    <p class = 'questionPrompt'>Drag the slider to estimate the angle of the slope</p>
+    <div class="container">
+        <img src = "{% static quest.image_url  %}" alt="My image" class="slopePic">
+
+
+    </div>
+
+{#     <div class="slideContainer">#}
+{#        <input type="range" min="0" max="90" value="45" class="slider" id="myRange">#}
+{##}
+{#         <form action="" method="POST">#}
+{#            {% csrf_token %}#}
+{#             <h1 class = "valueBox"><span class="slopeAngle" id="value" ></span><span>&#176;</span></h1>#}
+{#             <input type="hidden" value="" name="slopeHidden" id="hiddenValue"/>#}
+{#             <button class = nextButton id="next">Next</button>#}
+{#            <div class = "nextDiv">#}
+{#                <button class = nextButton id="next">Next</button>#}
+{#            </div>#}
+{##}
+{#        </form>#}
+{##}
+{#    </div>#}
+
+    <div class="slideContainer">
+        <input type="range" min="0" max="90" value="45" class="slider" id="myRange">
+    </div>
+
+    <form action="" method="POST" >
+            {% csrf_token %}
+            <h1 class = "valueBox"><span class="slopeAngle" id="value" ></span><span>&#176;</span></h1>
+            <input type="hidden" value="" name="slopeHidden" id="hiddenValue"/>
+
+            <div class = "nextDiv">
+                <button class = nextButton id="next">Next</button>
+            </div>
+
+    </form>
+
+
+
+
+
+<script>
+
+    var url = window.location.href
+    currentID = url.slice(-3,-1)
+
+    console.log(url)
+    console.log(currentID)
+    var newID = +currentID + 1
+
+    document.getElementById('next').onclick = function (){
+        console.log(newID)
+        newURL = url.replace(currentID, newID)
+
+        console.log(newURL)
+        window.location.href = newURL;
+
+    }
+
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("value");
+    var outputVarNo = document.getElementById("outputVar");
+
+    let update = () => output.innerHTML = slider.value;
+
+    slider.addEventListener('input', update);
+    update();
+
+    {#code to add slider value to hidden input field for POST method#}
+    var total = document.getElementById("value")
+    var hidden = document.getElementById("hiddenValue")
+    let add = () => hidden.value = total.innerHTML;
+    slider.addEventListener('input', add);
+    add();
+
+
+    var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("Bar");
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+}
+</script>
+
+
+</body>
+</html>

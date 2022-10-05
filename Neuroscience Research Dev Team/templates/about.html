@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Page</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home/about.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="header">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"></button>
+            <div id="myDropdown" class="dropdown-content">
+{#            <button class="dropbtn" style = background:#8252C7></button>#}
+            <a href="/">Home and Project Information</a>
+                <hr>
+            <a href="/about">About the Researchers</a>
+                <hr>
+            <a href="/safety_info">Safety Information</a>
+            </div>
+        </div>
+       <a href=""><img src="{% static 'home/Westminster_Logo_primary_thistle 6.png' %}" alt="My image" class="logo"></a>
+        <p class="headerText">Human Slope Angle Perception in Virtual and Real Mountain Environments</p>
+       <a href="/admin" class = "admin_button">Admin Login</a>
+   </div>
+
+   <div class = "container">
+        <h1 class = centered>
+            About the Researchers
+        </h1>
+
+        <hr style="height:1px;width: 80vw ;color:#211551;background-color:gray">
+        <div class="biography">
+            <div class="columnI">
+                {% load static %}
+                <a href=""><img src="{% static 'home/Russ_bio_pic.jpg' %}" alt="image" class="bioPic"></a>
+            </div>
+
+            <div class="bioText">
+                <div class = infoBox>
+                    Russ Costa
+                </div>
+                <p>
+                    The principal investigator for this project is Dr. Russell E. Costa, an Associate Professor of Honors & Neuroscience at Westminster College in Salt Lake City, Utah.<br><br> Dr. Costa is a cognitive scientist interested in human perception and attention in high-risk environments. As a backcountry skier and mountaineer, he is interested in how perceptions of slope angle influence decisions about mountain travel in avalanche terrain. If you have any questions about this project or his research more broadly, you may contact Dr. Costa via email at rcosta@westminstercollege.edu.
+                </p>
+            </div>
+
+        </div>
+   </div>
+
+   <div class="footerMain">
+        <div class="footer">
+            <div class = imColumn>
+                <img src="{% static 'home/footer_logo.png' %}" alt="My image" class="footer_logo">
+            </div>
+            <div class =textColumn>
+                <div class = "footerText">
+                    <h3 class = "footerSpacing">Westminster <br> College <h2/>
+                    <h4 class = "footerSpacing">Neuroscience <br> Program <h3/>
+                    <h5 class = "footerSpacing">1840 S 1300 E <h4/>
+                    <h6 class = "footerSpacing">Salt Lake City, UT 84105 <h5/>
+                </div>
+            <div class = mountainColumn>
+                <img src="{% static 'home/Mountain.png' %}" alt="My image" class="mountain">
+            </div>
+        </div>
+        </div>
+        <p class="copyright_rect">© Copyright 2021 Westminster College</p>
+   </div>
+
+<script>
+    function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>

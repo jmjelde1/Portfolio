@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Slopes</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home/home.css' %}">
+
+</head>
+<body>
+
+    <div class="header">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"></button>
+            <div id="myDropdown" class="dropdown-content">
+{#            <button class="dropbtn" style = background:#8252C7></button>#}
+            <a href="/">Home and Project Information</a>
+                <hr>
+            <a href="/about">About the Researchers</a>
+                <hr>
+            <a href="/safety_info">Safety Information</a>
+            </div>
+            <a href=""><img src="{% static 'home/Westminster_Logo_primary_thistle 6.png' %}" alt="My image" class="logo"></a>
+        <p class="headerText">Human Slope Angle Perception in Virtual and Real Mountain Environments</p>
+        </div>
+        <a href="/admin" class = "admin_button">Admin Login</a>
+    </div>
+
+
+    <div class="container">
+{#        <img src="{% static 'home/Home_mountain.png' %}" alt="My image" class="backgroundIm">#}
+        <h1 class =centered>Welcome!</h1>
+        <p style="font-size: 2em;line-height: 1;color: #211551;font-weight: bold">Human Slope Angle Perception in Virtual and Real Mountain Environments</p>
+        <p style="font-family: Merriweather;font-style: italic;font-weight: normal;font-size: 25px;line-height: 31px;color: #211551;">A neuroscience research study</p>
+        <hr class = righthr>
+        <hr class = lefthr>
+        <div class = infoBox>
+            So what is this study?
+        </div>
+        <p class="welcome_body_text"> This research study is being conducted by a professor of neuroscience at Westminster College in Salt Lake City, Utah. The purpose of this study is to evaluate where our human biases lie when it comes to perceiving the angles of snowy slopes in the backcountry. It will be conducted over the course of the 2021-22 ski season, with hopes of having results to present at the 2022 International Snow Science Workshop in Bend, OR.
+            <br><br>This is one of the first online-only neuroscience research studies regarding this topic, developed in conjunction with computer science and communication undergraduate students at Westminster to develop the web application.
+            <br><br>The ninety images were all taken in the Wasatch mountain range, by members of the team.
+</p>
+        <div class = infoBox>
+            What is going to happen with my results?
+        </div>
+        <p class="welcome_body_text">Your results will be compiled with all the other survey results to create a complete analysis of what biases there are in how humans perceive snow slope angles in the backcountry. Your results will not be linked to your email or any personal information, and will be utilized for solely scientific purposes. </p>
+{#        <div class = "infoBox" style="width: 80%;">#}
+{#            Psychology science of human slope angle perception#}
+{#        </div>#}
+{#        <p class="welcome_body_text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>#}
+    </div>
+
+    <div class="footerMain">
+        <div class="footer">
+            <div class = imColumn>
+                <img src="{% static 'home/footer_logo.png' %}" alt="My image" class="footer_logo">
+            </div>
+            <div class =textColumn>
+                <div class = "footerText">
+                    <h3 class = "footerSpacing">Westminster <br> College <h2/>
+                    <h4 class = "footerSpacing">Neuroscience <br> Program <h3/>
+                    <h5 class = "footerSpacing">1840 S 1300 E <h4/>
+                    <h6 class = "footerSpacing" style="margin-bottom: 0">Salt Lake City, UT 84105 <h5/>
+                </div>
+            </div>
+            <div class = mountainColumn>
+                <img src="{% static 'home/Mountain.png' %}" alt="My image" class="mountain">
+            </div>
+        </div>
+
+        <p class="copyright_rect">© Copyright 2021 Westminster College</p>
+    </div>
+
+<script>
+    function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onpointerup, window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>

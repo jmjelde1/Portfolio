@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Backcountry Safety Information</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home/safety_info.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="header">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"></button>
+            <div id="myDropdown" class="dropdown-content">
+{#            <button class="dropbtn" style = background:#8252C7></button>#}
+            <a href="/">Home and Project Information</a>
+                <hr>
+            <a href="/about">About the Researchers</a>
+                <hr>
+            <a href="/safety_info">Safety Information</a>
+            </div>
+            <a href=""><img src="{% static 'home/Westminster_Logo_primary_thistle 6.png' %}" alt="My image" class="logo"></a>
+        <p class="headerText">Human Slope Angle Perception in Virtual and Real Mountain Environments</p>
+        </div>
+        <a href="/admin" class = "admin_button">Admin Login</a>
+    </div>
+    <div class="container">
+        <h1 class =centered>Backcountry Safety Information</h1>
+        <img src="{% static 'home/Home_mountain.png' %}" class="containerPicSafe">
+        <div class = safeBlurb>Backcountry skiing involves a higher risk than is associated with skiing in-bounds at resorts. The goal of this research study is to evaluate where our human biases lie when it comes to perceiving the angles of snowy slopes in the backcountry, in hopes that one day we may be able to re-work current avalanche safety training to train skiers and snowboarders more effectively.</div>
+        <div class = infoBox>
+            Mountain Safety Resources and Organizations:
+        </div>
+        <div class="welcome_body_text">
+            <ul>
+            <li><a href = "https://utahavalanchecenter.org/">Utah Avalanche Center</a></li>
+            <li><a href = "https://www.skiutah.com/blog/authors/yeti/avalanche-safety-and-education">Ski Utah</a></li>
+            <li><a href = "https://utahavalanchecenter.org/education/selected-routes">Education</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footerMain">
+        <div class="footer">
+            <div class = imColumn>
+                <img src="{% static 'home/footer_logo.png' %}" alt="My image" class="footer_logo">
+            </div>
+            <div class =textColumn>
+                <div class = "footerText">
+                <h3 class = "footerSpacing">Westminster <br> College <h2/>
+                <h4 class = "footerSpacing">Neuroscience <br> Program <h3/>
+                <h5 class = "footerSpacing">1840 S 1300 E <h4/>
+                <h6 class = "footerSpacing" >Salt Lake City, UT 84105 <h5/>
+                </div>
+            </div>
+            <div class = mountainColumn>
+                <img src="{% static 'home/Mountain.png' %}" alt="My image" class="mountain">
+            </div>
+        </div>
+
+        <p class="copyright_rect">© Copyright 2021 Westminster College</p>
+    </div>
+
+<script>
+    function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
