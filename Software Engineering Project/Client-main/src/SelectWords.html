@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="OptionsExistingStory()">
+    <h1 class="addh1">What do you want to do with the story?</h1>
+    <div id="story" class="gameDisplay"></div>
+    <button id="nextStory" class="nextStory">Next Story</button>
+    <button id="previousStory" class="previousStory">Previous Story</button>
+    </br>
+    <button id="editStory" onclick="window.location.replace('./../editStory.html')" class="estory">Edit story</button>
+    <button id="editScramble" onclick="window.location.replace('./../scrambleWords.html')") class="sstory">Scramble Words</button>
+    </br>
+    <button onclick="window.location.replace('./../teacherChoose.html')" class="backgo">Go back</button>
+    <form id="get_stories">
+        <input type="hidden" name="teacher-code">
+    </form>
+    <div id="snumber" class="snumber"></div>
+    <script type="text/javascript" src="story.js"></script>
+</body>
+</html>

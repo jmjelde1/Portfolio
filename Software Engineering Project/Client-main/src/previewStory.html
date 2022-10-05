@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Preview Story</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body onload="preview()">
+    <div id="story" class="gameDisplay"></div>
+    <div id="wordContainer" class="container"></div>
+    <button id="nextStory" class="nextStory">Next Story</button>
+    <button id="previousStory" class="previousStory">Previous Story</button>
+    </br>
+
+    <button onclick="window.location.replace('./../teacherChoose.html')" class="backgo">Go back</button>
+    <form id="get_stories">
+        <input type="hidden" name="teacher-code">
+    </form>
+    <div id="snumber" class="snumber"></div>
+    <script type="text/javascript" src="story.js"></script>
+</body>
+</html>

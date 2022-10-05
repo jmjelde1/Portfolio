@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="utf-8">
+    
+    <title>Teacher choose </title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
+  </head>
+  <body onload="showName()">
+
+      <div id="name" class="name"   ></div>
+      <button class="start button" id="3" onclick="startGame()">Start Game!</button>
+      <div class="settings">
+          Settings
+          <button class="button4" id="2" onclick="addStory()">Add Story</button>
+<!--          <p> Add story to database   <input type="radio" name="choose" id="2"> </p>-->
+          <button class="button4" id="4" onclick="addStudent();">Add Student</button>
+<!--          <p> Add student   <input type="radio" name="choose" id="4"> </p>-->
+          <button class="button4" id="7" onclick="reset()">Reset Game</button>
+          <button class="button4" id="8" onclick="window.location.replace('./../previewStory.html')">Preview stories</button>
+      </div>
+      <div class="options">
+            Options
+          <button class="button3" id="5" onclick="progressClick()">Student progress </button>
+<!--            <p> See student progress  <input type="radio" name="choose" id="5"></p>-->
+          <button class="button3" id="1" onclick="alert('This feature is incomplete but you can demo what it looks like!');neemSelectS();">Edit story</button>
+<!--          <p> Select story for game   <input type="radio" name="choose" id="1"> </p>-->
+          <button class="button3" id="9" onclick="endGame()">End Game</button>
+      </div>
+
+
+      
+      <form id="tc">
+          <input type="hidden" name="teacher-code">
+      </form>
+    
+<!--      <button onclick = "choose2()">Take me there</button>-->
+      <button class="goButton" onclick = "teacherlogout()">Log out</button>
+      <script type="text/javascript" src="story.js"></script>
+  </body>
+</html> 

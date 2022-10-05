@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="SelectWordsFromStory()">
+    <h1 class="addh1">Choose the words to scramble</h1>
+    <div id="scrambleEdit" class="gameDisplay"></div>
+    <form id="get_stories">
+        <input type="hidden" name="teacher-code">
+    </form>
+    <button id="done" class="nextStory" onclick="alert('feature to be implemented')">Confirm</button>
+    <button id="canel" onclick="window.location.replace('./../SelectWords.html')" class="previousStory">Cancel</button>
+    <script type="text/javascript" src="story.js"></script>
+</body>
+</html>

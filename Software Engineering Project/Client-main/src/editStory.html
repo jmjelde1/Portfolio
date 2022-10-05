@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="utf-8">
+
+    <title>teacherEditStory</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body onload="EditExistingStory()">
+
+<h1> Add a story </h1>
+<h4> Please type or paste a story to add to the database</h4>
+
+
+<textarea cols="40" rows="7" id="newStory"> </textarea>
+
+<h4 id="newMessage"> </h4>
+<p id="selectedstory"></p>
+
+<button id ="1">Add story</button>
+<button id = "two"> Submit to database </button>
+<button onclick="window.location.href='SelectWords.html'">Cancel</button>
+
+<form id="EditStory" method="post">
+    <input type="hidden" name="teacher-code">
+</form>
+
+<form id="add_story_form" method="post">
+    <input type="hidden" id="teacher_add_id" name="teacher-code">
+    <input type="hidden" id="story_add" name="story">
+    <input type="hidden" id="story_add_index" name="scrambled-words">
+</form>
+<script type="text/javascript" src="story.js"></script>
+</body>
+</html>

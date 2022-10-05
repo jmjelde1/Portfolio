@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Storytellers</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <footer>
+            StoryTellers &copy; 2021
+        </footer>
+        <div id="name" class="name"></div>
+
+        <div id="title" class="title animate one">
+            <span>S</span><span>p</span><span>e</span><span>l</span><span>l</span><span>l</span><span>i</span><span>n</span><span>g</span><span>&nbsp</span>
+            <span id="1" class="two">z</span><span id="2" class="two">w</span><span id="3" class="two">i</span>
+        </div>
+        <p id="change"></p>
+        <button id="intro" onclick="displayLogin()" class="login vibe button">Login</button>
+        <div id="hidden" class="form">
+            <div class="intro" id="login">
+                <form id='myformStudent' method="POST">
+                    <h1>Welcome!</h1>
+                    <div class = 'text_field'>
+                        <input class='form-control' type="text" name="student-id" placeholder="Enter Your Student ID"/>
+                    </div>
+                    <input class='button0 button1' type="submit" onclick="removeTitle()" value="Go"/><button class="button0 button2" id="teacher" onclick="showTeacher(); return false;">Teacher Login</button>
+                </form>
+
+                <form id='myformTeacher' method="POST"  style="display: none">
+                    <h1>Welcome!</h1>
+                    <div class = 'text_field'>
+                        <input class='form-control' type="text" name="teacher-code" placeholder="Enter Your Teacher ID"/>
+                    </div>
+                    <input class='button0 button1' type="submit" value="Go"/><button class="button0 button2" id="Student" onclick="showStudent(); return false;">Student Login</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="main_div" class="mainProgress" style="display: none">
+            <textnode>Story Progress</textnode>
+            <div id="div2" class="progress_div2">
+                <div id="pspan" class="progress_span"></div>
+            </div>
+        </div>
+
+        <div id="attention" class="gameDisplay" style="display: none"></div>
+        <div id="storyContainer" class="gameDisplay"></div>
+        <div id="wordContainer" class="container"></div>
+        <div id="score" class="score"></div>
+
+        <button id="hint" class="rightCorner button" style="visibility: hidden">hint</button>
+        <form id="studentSolution" method="post">
+            <input type="hidden" id="studentSolutionId" name="student-id"/>
+            <input type="hidden" id="studentSolutionWordIndex" name="word-index"/>
+            <input type="hidden" id="studentSolutionWordSolution" name="word-solution"/>
+        </form>
+
+        <form id="refreshing">
+            <input type="hidden" name="student-id"/>
+        </form>
+
+        <button id="ref" onclick="refresh()" style="display: none" class="button5">Refresh</button>
+        <button id="logout" onclick="slogout()" class="button6" style="display: none">Log out</button>
+
+        <script type="text/javascript" src="story.js"></script>
+    </body>
+
+</html>

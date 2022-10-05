@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Storytellers</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body onload="loadStudent()">
+    <div id="storyContainer" class="gameDisplay"></div>
+    <div id="wordContainer" class="container"></div>
+    <div id="score"></div>
+
+    <button onclick="refresh()">Refresh</button>
+    <button id="hint" class="rightCorner button" style="visibility: hidden">hint</button>
+    <form id="studentSolution" method="post">
+        <input type="hidden" id="studentSolutionId" name="student-id"/>
+        <input type="hidden" id="studentSolutionWordIndex" name="word-index"/>
+        <input type="hidden" id="studentSolutionWordSolution" name="word-solution"/>
+    </form>
+
+    <form id="refreshing">
+        <input type="hidden" name="student-id"/>
+    </form>
+
+    <script type="text/javascript" src="story.js"></script>
+</body>
+</html>
