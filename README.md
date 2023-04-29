@@ -39,3 +39,5 @@ Link: https://github.com/jmjelde1/Portfolio/tree/main/Software%20Engineering%20P
 ### Ski Team Inventory
 
 Me and a partner developed an inventory management system for the Westminster Ski Team. The database tracks all the athletes skis, the brands as well as information about each skier. It has a interface that is connected to the database making it possible for the user to add, update or delete parts as they please.
+
+Link: https://github.com/jmjelde1/Portfolio/tree/main/Ski%20Team%20Inventory 
