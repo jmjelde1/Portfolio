@@ -10,7 +10,9 @@ LinkedIn: https://www.linkedin.com/in/joachim-mjelde-0b0145215/
 
 This app makes a day on the hill more engaging by letting users look at insightful data about their run. By utilizing Swift and SwiftUI, for each run the user does on the hill they are given information on how many turns they did, average and maximum G-force, average and top speed, jump time, and length as well as total vertical descent and other GPS related metrics. The app also has a built-in machine learning model that predicts ski type based on the accelerometer data collected while skiing.
 
-This project helped me attain a system-level understanding of the computer because it forced me to understand the underlying hardware of the phone I was coding for. It also helped me understand the concepts of object-oriented programming as Swift is a object-oriented programming language. Lastly, this project gave me significant project experience as it is a fully working iOS app that I spent two semesters working on, as well as it helped me develop effective problem solving skills.
+This project helped me attain a system-level understanding of the computer because it forced me to understand the underlying hardware of the phone I was coding for. It also helped me understand the concepts of object-oriented programming as Swift is a object-oriented programming language. This project also gave me significant project experience as it is a fully working iOS app that I spent two semesters working on, as well as it helped me develop effective problem solving skills.
+
+
 
 Link: https://github.com/jmjelde1/SkiForce
 
