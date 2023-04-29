@@ -6,6 +6,6 @@ This is a project done in collaboration with the Westminster College Neuroscienc
 
 I chose this project because this was my first time working with a client where we had to deliver a working product by the end of the semester. For this project we also got to work with Communications major students that did the design of the web pages for us. This was a great learning experince that forced us to communicate despite our different fields of expertise.
 
-This project helped me understand concepts and tecniques of software design, it gave me project experience working in a group setting, and it helped me develop effective problem solving skills, which relate to 3 out of the 4 the Westminster College Computer Science Learning goals.
+This project helped me understand concepts and tecniques of software design, it gave me project experience working in a group setting, and it helped me develop effective problem solving skills, which relate to 3 out of the 4 the Westminster College Computer Science Learning goals. 
 
 Link: https://github.com/jmjelde1/Portfolio/tree/main/Neuroscience%20Research%20Dev%20Team
