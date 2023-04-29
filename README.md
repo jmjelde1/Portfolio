@@ -34,3 +34,8 @@ This is my group project from Software Engineering. I chose this project because
 This project helped me understand concepts and tecniques of software design, it gave me project experience working in a group setting, and it helped me develop effective problem solving skills, which relate to 3 out of the 4 the Westminster College Computer Science Learning goals.
 
 Link: https://github.com/jmjelde1/Portfolio/tree/main/Software%20Engineering%20Project
+
+
+### Ski Team Inventory
+
+Me and a partner developed an inventory management system for the Westminster Ski Team. The database tracks all the athletes skis, the brands as well as information about each skier. It has a interface that is connected to the database making it possible for the user to add, update or delete parts as they please.
