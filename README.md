@@ -1,6 +1,7 @@
 # Portfolio
 
 Resume: [Joachim Mjelde - v2.pdf](https://github.com/jmjelde1/Portfolio/files/11358186/Joachim.Mjelde.-.v2.pdf)
+
 LinkedIn: https://www.linkedin.com/in/joachim-mjelde-0b0145215/
 
 ### SkiForce
