@@ -6,7 +6,7 @@ LinkedIn: https://www.linkedin.com/in/joachim-mjelde-0b0145215/
 
 #
 
-### SkiForce
+## SkiForce
 
 This app makes a day on the hill more engaging by letting users look at insightful data about their run. By utilizing Swift and SwiftUI, for each run the user does on the hill they are given information on how many turns they did, average and maximum G-force, average and top speed, jump time, and length as well as total vertical descent and other GPS related metrics. The app also has a built-in machine learning model that predicts ski type based on the accelerometer data collected while skiing.
 
@@ -17,7 +17,7 @@ Link: https://github.com/jmjelde1/SkiForce
 
 #
 
-### Slope Perception Survey Website
+## Slope Perception Survey Website
 
 This is a project done in collaboration with the Westminster College Neuroscience Department with the goal of researching people's ability to judge the gradient of a slope while backcountry skiing. The page consists of two parts - the survey page and a page that let's the researcher look at all the responses collected. The researcher can also easily download a CSV file of all the responses. The survey did get approved to be sent out to 4000 skiers in the Utah area and had pending approvals for Colorado and Montana as well.
 
@@ -29,7 +29,7 @@ Link: https://github.com/jmjelde1/Portfolio/tree/main/Neuroscience%20Research%20
 
 # 
 
-### Spelling Wiz - Software Engineering
+## Spelling Wiz - Software Engineering
 
 This is my group project from Software Engineering. I chose this project because it was the largest and most challenging project I have completed thus far, and it was my first time working on a long term project with a group. My group chose to create a web based spelling and problem-solving game targeted at 2nd through 5th graders. This gave me opportunities to self learn new skills used in software development, as well as providing an opportunity to learn what it's like to work with a team of developers, how to plan how you're going to develop software, and how to organize your work output as a team.
 
@@ -40,7 +40,7 @@ Link: https://github.com/jmjelde1/Portfolio/tree/main/Software%20Engineering%20P
 
 #
 
-### Ski Team Inventory
+## Ski Team Inventory
 
 Me and a partner developed an inventory management system for the Westminster Ski Team. The database tracks all the athletes skis, the brands as well as information about each skier. It has a interface that is connected to the database making it possible for the user to add, update or delete parts as they please.
 
