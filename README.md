@@ -1,4 +1,4 @@
-# Portfolio
+# Portfolio - Joachim Mjelde
 
 Resume: [Joachim Mjelde - v2.pdf](https://github.com/jmjelde1/Portfolio/files/11358186/Joachim.Mjelde.-.v2.pdf)
 
