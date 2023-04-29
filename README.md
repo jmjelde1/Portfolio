@@ -1,5 +1,14 @@
 # Portfolio
 
+Resume: [Joachim Mjelde - v2.pdf](https://github.com/jmjelde1/Portfolio/files/11358186/Joachim.Mjelde.-.v2.pdf)
+
+### SkiForce
+
+This app makes a day on the hill more engaging by letting users look at insightful data about their run. By utilizing Swift and SwiftUI, for each run the user does on the hill they are given information on how many turns they did, average and maximum G-force, average and top speed, jump time, and length as well as total vertical descent and other GPS related metrics. The app also has a built-in machine learning model that predicts ski type based on the accelerometer data collected while skiing.
+
+This project helped me attain a system-level understanding of the computer because it forced me to understand the nuderlying hardware of the phone I was coding for. It also helped me understand the concepts of object-oriented proghramming as Swift is a object-oriented programming language. Lastly, this project gave me significant project experience as it is a fully working iOS app that I spent two semesters working on, as well as it helped me develop effective problem solving skills.
+
+
 ### Slope Perception Survey Website
 
 This is a project done in collaboration with the Westminster College Neuroscience Department with the goal of researching people's abaility to judge the gradient of a slope while backcountry skiing. The page consists of two parts - the survey page and a page that let's the researcher look at all the responses collected. The researcher can also easily download a CSV file of all the responses. The survey did get approved to be sent out to 4000 skiers in the Utah area and had pending approvals for Colorado and Montana as well.
